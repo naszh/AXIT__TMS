@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Указываем box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class], ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class], ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/**/
+
+/* .container {
+    display: block;
+    margin: 0 auto;
+} */
+
+/**/
+
+.tabs {
+    display: block;
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.tabs__table {
+    border-collapse: collapse;
+}
+
+td {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+}
+
+#tabs__table__td1 {
+    width: 203px;
+    border: 1px solid #C6CBCD;
+    border-bottom: none;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px 82.5px;
+}
+
+#tabs__table__td2, #tabs__table__td3 {
+    width: 184px;
+    border-bottom: 1px solid #C6CBCD;
+    padding: 10px 73px;
+    cursor: pointer;
+}
+
+#tabs__table__td4 {
+    border-bottom: 1px solid #C6CBCD;
+    width: 600px;
+}
+
+.tabs__box {
+    border-left: 1px solid #C6CBCD;
+    border-right: 1px solid #C6CBCD;
+    border-bottom: 1px solid #C6CBCD;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+.tabs__box__description {
+    width: 698px;
+    display: inline-block;
+}
+
+.tabs__box__description>h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000;
+    padding: 20px 0;
+    padding-left: 100px;
+    margin-bottom: 22px;
+}
+
+.tabs__box__description>p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color:#000;
+    text-align: left;
+    padding-left: 100px;
+    margin: 0 auto 27px;
+}
+
+.tabs__button {
+    margin-left: 100px;
+    width: 270px;
+    background: #EC7979;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.tabs__box__img {
+    width: 470px;
+    float: right;
+}

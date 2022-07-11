@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Указываем box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class], ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class], ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/**/
+
+.about {
+  display: block;
+  margin: 0 auto;
+}
+
+.about__title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #000000;
+  margin: 50px 0 40px;
+  text-align: center;
+}
+
+.about__title__separator {
+  border-top: 1px solid #EC7979;
+  width: 170px;
+  margin: 0 auto;
+}
+
+.about__text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #86878B;
+  margin: 40px auto 110px;
+  text-align: center;
+  width: 1170px;
+}
+
+.about__icon-box {
+  text-align: center;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.about__icon-group {
+  width: 370px;
+  height: 383px;
+  display: inline-block;
+}
+
+.about__icon-group__elem {
+  width: 92px;
+  height: 92px;
+  border: 1px solid #EC7979;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.about__icon-group__elem img {
+  display: inline-block;
+  padding-top: 11px;
+}
+
+.about__icon-group__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color:#000000;
+  text-align: center;
+  width: 369px;
+  padding: 33.5px;
+}
+
+.about__icon-group__text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color:#000000;
+  width: 370px;
+  height: 105px;
+  text-align: center;
+}
