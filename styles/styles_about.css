@@ -65,6 +65,7 @@ input, button, textarea, select {
 .about {
   display: block;
   margin: 0 auto;
+  width: 1170px;
 }
 
 .about__title {
