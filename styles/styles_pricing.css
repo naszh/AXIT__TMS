@@ -108,17 +108,8 @@
     border: 2px solid #F5F5F5;
 }
 
-.pricing__box__basic:hover {
+.pricing__box__basic:hover, .pricing__box__optima:hover, .pricing__box__pro:hover {
     margin-top: -25px;
     transition: 0.7s;
-}
-
-.pricing__box__optima:hover {
-    margin-top: -25px;
-    transition: 0.7s;
-}
-
-.pricing__box__pro:hover {
-    margin-top: -25px;
-    transition: 0.7s;
+    cursor: pointer;
 }
