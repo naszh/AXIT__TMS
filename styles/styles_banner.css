@@ -22,7 +22,7 @@ header img {
     align-items: center;
     color: #FFF;
     position: relative;
-    left: 380px;
+    left: 350px;
 }
 
 .menu span:hover {
@@ -34,31 +34,24 @@ header img {
     background: url("../icons/bg.png"),  rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
     max-width: 1510px;
-    /* width: 100%; */
     height: 1026px;
     background-size: cover;
     background-repeat: no-repeat;
-    /* align-items: center; */
-    /* align-content: center; */
     display: block;
     position: relative;
     bottom: 75px;
-    /* display: flex; */
-    /* justify-content: space-around; */
 }
 
 .banner__about {
     width: 670px;
-    margin-left: 120px;
+    margin-left: 89.5px;
     display: inline-block;
 }
 
 .banner img {
     display: inline-block;
-    
     height: 100px;
     margin-top: 280px;
-    
 }
 
 .banner__title {
@@ -102,7 +95,7 @@ header img {
     float: right;
     width: 470px;
     height: 450px;
-    margin-right: 65px;
+    margin-right: 89.5px;
     margin-top: 280px;
     background: #FFF;
     border-radius: 10px;
