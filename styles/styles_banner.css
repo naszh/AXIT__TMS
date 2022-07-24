@@ -89,6 +89,7 @@ header img {
     font-size: 18px;
     color: #FFF;
     background: transparent;
+    cursor: pointer;
 }
 
 .banner__form {
