@@ -4,8 +4,8 @@ header {
     max-width: 1510px;
     height: 75px;
     background: #000;
-    position: relative;
-    z-index: 1;
+    /* position: relative;
+    z-index: 1; */
 }
 
 header img {
@@ -38,8 +38,8 @@ header img {
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
-    position: relative;
-    bottom: 75px;
+    /* position: relative;
+    bottom: 75px; */
 }
 
 .banner__about {
@@ -51,7 +51,7 @@ header img {
 .banner img {
     display: inline-block;
     height: 100px;
-    margin-top: 280px;
+    margin-top: 230px;
 }
 
 .banner__title {
@@ -96,7 +96,7 @@ header img {
     width: 470px;
     height: 450px;
     margin-right: 89.5px;
-    margin-top: 280px;
+    margin-top: 230px;
     background: #FFF;
     border-radius: 10px;
     text-align: center;
