@@ -1,7 +1,7 @@
 header {
     display: flex;
     margin: 0 auto;
-    width: 100%;
+    max-width: 1510px;
     height: 75px;
     background: #000;
     position: relative;
@@ -30,7 +30,124 @@ header img {
 }
 
 .banner {
-    background-image: url(icons/bg.png);
+    margin: 0 auto;
+    background: url("../icons/bg.png"),  rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    max-width: 1510px;
+    /* width: 100%; */
+    height: 1026px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* align-items: center; */
+    /* align-content: center; */
+    display: block;
+    position: relative;
+    bottom: 75px;
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+
+.banner__about {
+    width: 670px;
+    margin-left: 120px;
+    display: inline-block;
+}
+
+.banner img {
+    display: inline-block;
+    
+    height: 100px;
+    margin-top: 280px;
+    
+}
+
+.banner__title {
+    margin-top: 45px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    color: #FFF;
+    line-height: 1.2;
+}
+
+.banner__title__separator {
+    margin-top: 50px;
+    border-top: 1px solid #FFF;
+    width: 170px;
+}
+
+.banner__text {
+    width: 270px;
+    margin-top: 35px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #FFF;
+}
+
+.button__download {
+    width: 270px;
+    padding: 15px 0;
+    margin-top: 35px;
+    border: 2px solid #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFF;
+    background: transparent;
+}
+
+.banner__form {
+    float: right;
+    width: 470px;
+    height: 450px;
+    margin-right: 65px;
+    margin-top: 280px;
+    background: #FFF;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333333;
+    width: 367px;
+    padding: 30px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form__title span {
+    color:#EC7979;
+}
+
+.banner__form input {
+    width: 78%;
+    margin-top: 20px;
+    padding: 16px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #BDBDBD;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.banner__form button {
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFF;
+    padding: 22px 0;
+    background: #EC7979;
+    border-radius: 0px 0px 10px 10px;
+    border: none;
+    position: relative;
+    top: 69px;
+    cursor: pointer;
 }
