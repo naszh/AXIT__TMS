@@ -1,7 +1,6 @@
 .social {
     display: block;
-    margin: 0 auto;
-    max-width: 1510px;
+    max-width: 100%;
     height: 140px;
     background: #F8EFEF;
     /* position: relative;
@@ -9,8 +8,13 @@
     margin-bottom: 105px;
 }
 
+.social__content {
+    width: 1170px;
+    margin: 0 auto;
+}
+
 .social__text{
-    margin-left: 89.5px;
+    /* margin-left: 89.5px; НЕ НУЖНО */
     display: inline-block;
 }
 
@@ -34,7 +38,7 @@
 }
 
 .social-icons {
-    margin-right: 89.5px;
+    /* margin-right: 89.5px; НЕ НУЖНО */
     float: right;
     color: #CCC;
     font-size: 55px;
