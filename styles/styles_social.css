@@ -1,21 +1,24 @@
 .social {
-    display: block;
+    display: flex;
     max-width: 100%;
     height: 140px;
     background: #F8EFEF;
-    /* position: relative;
-    top: -75px; */
     margin-bottom: 105px;
 }
 
 .social__content {
     width: 1170px;
     margin: 0 auto;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
 }
 
 .social__text{
-    /* margin-left: 89.5px; НЕ НУЖНО */
     display: inline-block;
+    width: 40%;
+    margin-right: 55px;
 }
 
 .social__title {
@@ -38,15 +41,66 @@
 }
 
 .social-icons {
-    /* margin-right: 89.5px; НЕ НУЖНО */
-    float: right;
     color: #CCC;
-    font-size: 55px;
-    letter-spacing: 15px;
-    margin-top: 30px;
+    font-size: 50px;
+    letter-spacing: 10px;
 }
 
 .social-icons a:active, a:hover, a {
     text-decoration: none;
     color: #CCC;
+}
+
+@media (max-width: 1050px) {
+    .social__title {
+        font-size: 18px;
+        padding-bottom: 0;
+    }
+    
+    .social__decription {
+        font-size: 14px;
+        width: auto;
+    }
+
+    .social-icons {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 855px) {
+    .social__text{
+        margin-right: 20px;
+    }
+
+    .social-icons {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 665px) {
+    .social {
+        height: auto;
+    }
+
+    .social__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social__text {
+        width: 100%;
+    }
+    
+    .social__title {
+        margin-top: 25px;
+    }
+    
+    .social__decription {
+        margin-top: 13px;
+    }
+
+    .social-icons {
+        margin: 25px 0;
+        font-size: 20px;
+    }
 }

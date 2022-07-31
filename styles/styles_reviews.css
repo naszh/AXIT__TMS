@@ -1,7 +1,7 @@
 .reviews {
     display: block;
     margin: 0 auto;
-    min-width: 1170px;
+    width: 1170px;
 }
 
 .reviews__title {
@@ -25,9 +25,8 @@
     font-size: 18px;
     font-weight: 400;
     color: #86878B;
-    margin: 40px auto 110px;
+    margin: 40px auto 80px;
     text-align: center;
-    width: 1170px;
 }
 
 .reviews__box {
@@ -36,9 +35,9 @@
 }
 
 .customer {
-    width: 370px;
+    width: 33.3%;
     margin: 0 15px;
-    margin-bottom: 64px;
+    margin-bottom: 50px;
 }
 
 .customer__descr {
@@ -49,7 +48,7 @@
     font-size: 18px;
     text-align: center;
     color: #86878B;
-    padding: 38px 0;
+    padding: 40px 15px;
 }
 
 .polygon {
@@ -68,6 +67,7 @@
 .customer__about>img {
     margin-top: 66px;
     width: 70px;
+    height: 70px;
 }
 
 .customer__about>h4 {
@@ -86,4 +86,97 @@
     font-weight: 400;
     font-size: 18px;
     color: #000000;
+}
+
+.customer__switcher {
+    margin: 0 auto 30px;
+    display: none;
+}
+
+@media (max-width: 1170px) {
+    .reviews {
+        width: 100%;
+    }
+
+    .customer__about>h4 {
+        font-size: 20px;
+}
+}
+
+@media (max-width: 1024px) {
+    .reviews__title {
+        font-size: 24px;
+        margin-top: 25px;
+    }
+
+    .reviews__title__separator {
+        width: 142px;
+    }
+
+    .reviews__text {
+        font-size: 14px;
+        margin: 30px auto;
+    }
+
+    .customer__descr {
+        font-size: 14px;
+    }
+
+    .customer__about>img {
+        width: 63px;
+        height: 63px;
+        margin-top: 55px;
+    }
+    
+    .customer__about>h4 {
+        font-size: 18px;
+        margin-top: 55px;
+    }
+    
+    .reviews__box span {
+        font-size: 14px;
+        position: relative;
+        top: -20px;
+        margin-left: 93px;
+    }
+}
+
+@media (max-width: 858px) {
+    .reviews__title__separator {
+        width: 134px;
+    }
+
+    .customer__about>img {
+        width: 57px;
+        height: 57px;
+    }
+
+    .customer__about>h4 {
+        font-size: 14px;
+    }
+    
+    .reviews__box span {
+        font-size: 13px;
+        position: relative;
+        top: -10px;
+        margin-left: 87px;
+    }
+}
+
+@media (max-width: 660px) {
+    .customer {
+        width: 90%;
+    }
+
+    .customer1, .customer3 {
+        display: none;
+    }
+
+    .customer__descr {
+        padding: 20px;
+    }
+
+    .customer__switcher {
+        display: block;
+    }
 }

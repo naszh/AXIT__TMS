@@ -2,7 +2,7 @@
     display: block;
     margin: 0 auto;
     background-color: #F5F5F5;
-    min-width: 1170px;
+    width: 100%;
 }
 
 .pricing__title {
@@ -25,20 +25,19 @@
     font-size: 18px;
     font-weight: 400;
     color: #86878B;
-    margin: 40px auto 110px;
+    margin: 40px auto 80px;
     text-align: center;
-    width: 1170px;
 }
 
 .pricing__box {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    width: 1170px;
 }
 
 .pricing__box__basic, .pricing__box__optima, .pricing__box__pro {
-    width: 370px;
-    /* display: flex; */
-    /* flex-direction: column; */
+    width: 33.3%;
     margin: 0 15px;
     margin-bottom: 50px;
 }
@@ -112,4 +111,63 @@
     margin-top: -25px;
     transition: 0.7s;
     cursor: pointer;
+}
+
+@media (max-width: 1170px) {
+    .pricing__box {
+        width: 100%;
+    }
+
+    .pricing__text {
+        margin-bottom: 50px;
+    }
+
+    .pricing__box__basic, .pricing__box__optima, .pricing__box__pro {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 660px) {
+    .pricing__box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing__box__basic, .pricing__box__optima, .pricing__box__pro {
+        margin-bottom: 27px;
+        width: 90%;
+    }
+
+    .pricing__title {
+        font-size: 24px;
+    }
+    
+    .pricing__title__separator {
+        width: 135px;
+    }
+    
+    .pricing__text {
+        font-size: 14px;
+        margin: 25px auto 25px;
+    }
+
+    .basic__item, .optima__item, .pro__item {
+        font-size: 14px;
+        height: 40px;
+    }
+    
+    #item-first {
+        font-size: 18px;
+        height: 50px;
+    }
+    
+    #item-second {
+        font-size: 24px;
+        height: 78px;
+    }
+
+    .pricing__box__basic:hover, .pricing__box__optima:hover, .pricing__box__pro:hover {
+        margin-top: 0;
+        cursor: default;
+    }
 }

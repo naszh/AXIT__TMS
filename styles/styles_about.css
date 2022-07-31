@@ -1,6 +1,11 @@
 .about {
   display: block;
   margin: 0 auto;
+  width: 100%;
+}
+
+.about-content {
+  margin: 0 auto;
   width: 1170px;
 }
 
@@ -26,7 +31,7 @@
   color: #86878B;
   margin: 40px auto 110px;
   text-align: center;
-  width: 1170px;
+  /* width: 1170px; */
 }
 
 .about__icon-box {
@@ -72,4 +77,83 @@
   width: 370px;
   height: 105px;
   text-align: center;
+}
+
+@media (max-width: 1170px) {
+  .about-content {
+    width: 100%;
+}
+  .about__icon-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .about__title {
+    font-size: 24px;
+  }
+  
+  .about__title__separator {
+    width: 140px;
+  }
+  
+  .about__text {
+    font-size: 14px;
+    margin: 30px auto 65px;
+  }
+  
+  .about__icon-group {
+    width: 318px;
+    height: 310px;
+  }
+  
+  .about__icon-group__elem {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about__icon-group__elem img {
+    width: 56px;
+  }
+
+  #elem3 {
+    width: 38px;
+  }
+  
+  .about__icon-group__title {
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  .about__icon-group__text {
+    font-size: 14px;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 964px) {
+  .about__title {
+    font-size: 18px;
+  }
+  
+  .about__title__separator {
+    width: 135px;
+  }
+  
+  .about__text {
+    font-size: 13px;
+  }
+  
+  .about__icon-group {
+    width: 290px;
+    height: auto;
+  }
+}
+
+@media (max-width: 660px) {
+  .about__icon-box {
+    flex-direction: column;
+    align-items: center;
+  }
 }

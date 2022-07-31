@@ -1,52 +1,59 @@
-.tabs {
+/* .tabs {
     display: block;
     margin: 0 auto;
+    width: 100%;
+} */
+
+.tabs {
     width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.tabs__table {
-    border-collapse: collapse;
-}
-
-td {
+.tabs__row {
+    display: flex;
+    flex-direction: row;
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 14px;
     color: #333333;
     text-align: center;
+    margin: 0;
 }
 
-#tabs__table__td1 {
-    width: 203px;
+#tabs__row__active {
     border: 1px solid #C6CBCD;
     border-bottom: none;
     border-radius: 5px 5px 0px 0px;
-    padding: 10px 82.5px;
+    padding: 10px 70px;
 }
 
-#tabs__table__td2, #tabs__table__td3 {
-    width: 184px;
-    border-bottom: 1px solid #C6CBCD;
-    padding: 10px 73px;
+#tabs__row__inactive {
+    display: flex; 
+    border-bottom: 1px solid #C6CBCD; 
+    width: 100%; 
+    justify-content: flex-start;
+}
+
+#tabs__row__inactive p {
+    padding: 10px 70px;
     cursor: pointer;
 }
 
-#tabs__table__td4 {
-    border-bottom: 1px solid #C6CBCD;
-    width: 600px;
-}
-
 .tabs__box {
-    border-left: 1px solid #C6CBCD;
-    border-right: 1px solid #C6CBCD;
-    border-bottom: 1px solid #C6CBCD;
-    height: 500px;
+    border: 1px solid #C6CBCD;
+    border-top: 0;
     margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .tabs__box__description {
-    width: 698px;
-    display: inline-block;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 30px;
 }
 
 .tabs__box__description>h3 {
@@ -55,7 +62,7 @@ td {
     font-size: 30px;
     color: #000;
     padding: 20px 0;
-    padding-left: 100px;
+    /* padding-left: 100px; */
     margin-bottom: 22px;
 }
 
@@ -65,12 +72,12 @@ td {
     font-size: 18px;
     color:#000;
     text-align: left;
-    padding-left: 100px;
+    /* padding-left: 100px; */
     margin: 0 auto 27px;
 }
 
 .tabs__button {
-    margin-left: 100px;
+    margin: 30px 0 50px;
     width: 270px;
     background: #EC7979;
     text-align: center;
@@ -82,7 +89,89 @@ td {
     cursor: pointer;
 }
 
-.tabs__box__img {
-    width: 470px;
-    float: right;
+.tabs__button:hover {
+    background: #AB4949;
+}
+
+.tabs__button:active {
+    background: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
+
+@media (max-width: 1170px) {
+    .tabs {
+        width: 100%;
+    }
+
+    .tabs__box__description {
+        padding-left: 80px;
+    }
+
+    .tabs__box__description>h3 {
+        font-size: 24px;
+    }
+    
+    .tabs__box__description>p {
+        font-size: 14px;
+    }
+
+    .tabs__box__img {
+        width: 400px;
+    }
+
+    #tabs__row__active {
+        padding: 10px 60px;
+    }
+
+    #tabs__row__inactive p {
+        padding: 10px 60px;
+    }
+}
+
+@media (max-width: 850px) {
+    .tabs__box__description {
+        padding-left: 25px;
+        padding-right: 15px;
+    }
+
+    .tabs__box__description>h3 {
+        font-size: 18px;
+    }
+    
+    .tabs__box__description>p {
+        font-size: 13px;
+    }
+
+    .tabs__box__img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 660px) {
+    .tabs__box__img {
+        display: none;
+    }
+
+    .tabs__box__description {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tabs__box__description>p {
+        text-align: center;
+        margin: 0;
+    }
+
+    .tabs__button {
+        width: 85%;
+        margin: 30px auto;
+    }
+
+    #tabs__row__active {
+        padding: 10px 30px;
+    }
+
+    #tabs__row__inactive p {
+        padding: 10px 20px;
+    }
 }
